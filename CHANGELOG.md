@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.1.1 (2026-05-14)
+
+### Bug Fixes
+
+- Correct formatting in README.md
+  ([`0c0c90e`](https://github.com/kevdougful/govee-hass-connect/commit/0c0c90e005cd2ef89becf665341517d47b85c8ba))
+
+
 ## v1.1.0 (2026-05-14)
 
 ### Features
