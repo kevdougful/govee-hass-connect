@@ -1,0 +1,50 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Govee Hass Connect",
+        "description": "Enter the IPv4 addresses of your Govee devices. Use commas or new lines to separate multiple IPs.\n\nThis integration is designed for segmented networks (VLANs) where multicast discovery does not work.",
+        "data": {
+          "static_ips": "Device IP addresses"
+        },
+        "data_description": {
+          "static_ips": "One IP per line, or comma-separated. Example:\n192.168.10.100\n192.168.10.101"
+        }
+      }
+    },
+    "error": {
+      "invalid_ip": "One or more IP addresses are invalid. Enter valid IPv4 addresses.",
+      "no_ips": "At least one IP address is required.",
+      "cannot_connect": "Could not reach any of the specified devices. Verify the IPs are correct and the devices are powered on."
+    },
+    "abort": {
+      "single_instance_allowed": "Already configured. Only a single instance is supported."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Update Device IPs",
+        "description": "Update the list of Govee device IP addresses.",
+        "data": {
+          "static_ips": "Device IP addresses"
+        },
+        "data_description": {
+          "static_ips": "One IP per line, or comma-separated."
+        }
+      }
+    },
+    "error": {
+      "invalid_ip": "One or more IP addresses are invalid. Enter valid IPv4 addresses.",
+      "no_ips": "At least one IP address is required."
+    }
+  },
+  "exceptions": {
+    "port_in_use": {
+      "message": "UDP port {port} is already in use. Another instance of this integration may be running."
+    },
+    "no_devices_found": {
+      "message": "No Govee devices responded at the configured IPs. Check that the devices are powered on and reachable from this host. If your devices are on a different VLAN, ensure firewall rules allow UDP traffic on ports 4001–4003."
+    }
+  }
+}

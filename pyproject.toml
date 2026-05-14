@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "govee-hass-connect"
+version = "0.1.0"
+description = "Home Assistant custom integration for static-IP Govee devices on segmented networks"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+  { name = "Kevin" }
+]
+keywords = ["home-assistant", "govee", "integration", "iot", "smarthome"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/kevdougful/govee-hass-connect"
+Repository = "https://github.com/kevdougful/govee-hass-connect"
+Issues = "https://github.com/kevdougful/govee-hass-connect/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["custom_components*"]
+
+[tool.setuptools.package-data]
+"custom_components.govee_hass_connect" = ["*.json", "translations/*.json"]
+
+[tool.semantic_release]
+branch = "main"
+version_toml = ["pyproject.toml:project.version"]
+commit_message = "chore(release): {version}"
+tag_format = "v{version}"
+allow_zero_version = false
+
+[tool.semantic_release.remote]
+name = "origin"
+type = "github"
+
+[tool.semantic_release.commit_parser_options]
+allowed_tags = ["feat", "fix", "perf", "refactor", "build", "chore", "ci", "docs", "test"]
+minor_tags = ["feat"]
+patch_tags = ["fix", "perf", "refactor"]
