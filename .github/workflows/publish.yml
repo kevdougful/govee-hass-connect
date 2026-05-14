@@ -1,9 +1,9 @@
 name: Publish
 
 on:
-  push:
-    tags:
-      - "v*"
+  workflow_dispatch:
+    # Disabled: tag push from GITHUB_TOKEN does not trigger cross-workflow events.
+    # Publish is now handled directly in release.yml.
 
 jobs:
   build:
