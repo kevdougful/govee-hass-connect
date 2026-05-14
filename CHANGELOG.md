@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.1.2 (2026-05-14)
+
+### Bug Fixes
+
+- Combine release and publish into single workflow
+  ([`7ad791e`](https://github.com/kevdougful/govee-hass-connect/commit/7ad791ed85f3e564d0442258c128bc79efba884c))
+
+
 ## v1.1.1 (2026-05-14)
 
 ### Bug Fixes
