@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "Govee Hass Connect",
-        "description": "Enter the IPv4 addresses of your Govee devices. Use commas or new lines to separate multiple IPs.\n\nThis integration is designed for segmented networks (VLANs) where multicast discovery does not work.",
+        "description": "Enter the IPv4 addresses of your Govee devices.  Use commas or new lines to separate multiple IPs.\n\nThis integration is designed for segmented networks (VLANs) where multicast discovery does not work.",
         "data": {
           "static_ips": "Device IP addresses"
         },
