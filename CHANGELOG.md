@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.1.0 (2026-05-14)
+
+### Features
+
+- Update release workflow and add publish workflow for PyPI
+  ([`5f379a0`](https://github.com/kevdougful/govee-hass-connect/commit/5f379a01956311c23f6bc0c045ab154e248a987d))
+
+
 ## v1.0.0 (2026-05-14)
 
 ### Features
