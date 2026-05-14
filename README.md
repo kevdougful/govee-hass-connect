@@ -1,6 +1,6 @@
 # govee-hass-connect
 
-Omnibus Home Assistant integration for Govee products, built for segmented/VLAN networks where multicast discovery is unreliable. 
+Omnibus Home Assistant integration for Govee products, built for segmented/VLAN networks where multicast discovery is unreliable.
 
 ## What This Repo Contains
 
